@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using WebAppJwt.Helpers;
+using WebAppJwt.Repositories;
 using WebAppJwt.Services_file;
 
 namespace WebAppJwt
@@ -41,6 +42,8 @@ namespace WebAppJwt
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IFlowlineDimService, FlowlineDimService>();
+            services.AddScoped<IFlowlineDimRepository, FlowlineDimRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

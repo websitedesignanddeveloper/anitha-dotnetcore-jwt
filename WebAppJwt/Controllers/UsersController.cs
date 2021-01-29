@@ -19,10 +19,12 @@ namespace WebAppJwt.Controllers
     {
         private IUserService _userService;
         private readonly IConfiguration _config;
-        public UsersController(IUserService userService, IConfiguration configuration)
+        private readonly IFlowlineDimService _flowlineDimService;
+        public UsersController(IUserService userService, IConfiguration configuration, IFlowlineDimService flowlineDimService)
         {
             _userService = userService;
             _config = configuration;
+            _flowlineDimService = flowlineDimService;
         }
 
         [HttpPost("authenticate")]
@@ -76,6 +78,20 @@ namespace WebAppJwt.Controllers
                     return BadRequest(new { message = ImgList });
                 }
             return Ok(ImgList);
+        }
+
+        [HttpGet("getAllFlowLineDim")]
+        public IActionResult GetAllFlowLineDim()
+        {
+            try
+            {
+                var itemsSold = _flowlineDimService.GetAllFlowLineDim();
+                return Ok(itemsSold);
+            }
+            catch (Exception ex)
+            {
+                 return BadRequest(new { message = ex.ToString() });
+            }
         }
 
     }
