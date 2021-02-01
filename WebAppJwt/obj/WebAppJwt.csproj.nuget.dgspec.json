@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\dot_core\\WebAppJwt\\WebAppJwt.csproj": {}
+    "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\WebAppJwt.csproj": {}
   },
   "projects": {
-    "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\dot_core\\WebAppJwt\\WebAppJwt.csproj": {
+    "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\WebAppJwt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\dot_core\\WebAppJwt\\WebAppJwt.csproj",
+        "projectUniqueName": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\WebAppJwt.csproj",
         "projectName": "WebAppJwt",
-        "projectPath": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\dot_core\\WebAppJwt\\WebAppJwt.csproj",
+        "projectPath": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\WebAppJwt.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\dot_core\\WebAppJwt\\obj\\",
+        "outputPath": "D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
