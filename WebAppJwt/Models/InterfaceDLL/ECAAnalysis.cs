@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 using System.Data;
 
-using River_X.Models;
+using WebAppJwt.Models;
 
-namespace River_X.Models.InterfaceDLL
+namespace WebAppJwt.Models.InterfaceDLL
 {
     public static class ECAAnalysis
     {

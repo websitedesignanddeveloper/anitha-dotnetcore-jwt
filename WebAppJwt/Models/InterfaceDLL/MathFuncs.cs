@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
-namespace River_X.Models.InterfaceDLL
+namespace WebAppJwt.Models.InterfaceDLL
 {
     public static class MathFuncs
     {

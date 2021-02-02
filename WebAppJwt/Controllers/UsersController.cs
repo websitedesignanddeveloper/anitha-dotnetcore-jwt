@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Cors;
 using System.Net.Http;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using WebAppJwt.Models.InterfaceDLL;
+using System.Runtime.InteropServices;
+
 namespace WebAppJwt.Controllers
 {
     [ApiController]
@@ -94,5 +97,32 @@ namespace WebAppJwt.Controllers
             }
         }
 
+        [HttpGet("getSimpleCalculation")]
+        public IActionResult GetSimpleCalculation()
+        {
+            try
+            {
+                //var itemsSold = _flowlineDimService.GetAllFlowLineDim();
+                //return Ok(itemsSold);
+
+                //ECAAnalysis.Kmat_Calc(100.501,101.501,100.501);
+
+                //IntermediateCalcs.mainIntermediateCalcs(12, 13);
+                double val1 = 4, val2 = 6, val3=8 ;
+                int val4 = 4;
+                //Kmat_Calc(ref val1, ref val2, ref val3);
+
+                StaticAnalysis.analyticalStaticAnalysis(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4);
+                return Ok(null);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.ToString() });
+            }
+        }
+
+        //[DllImport("ECA_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport(@"Fortran_DLL\ECA_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void Kmat_Calc(ref double CVN, ref double B, ref double Kmat);
     }
 }
