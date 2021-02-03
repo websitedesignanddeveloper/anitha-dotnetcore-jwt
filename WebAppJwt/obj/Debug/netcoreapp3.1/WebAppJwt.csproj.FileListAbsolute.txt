@@ -547,3 +547,5 @@ D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnet
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.csproj.CopyComplete
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.dll
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.pdb
+D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\Fortran_DLLs\ECA_DLL.dll
+D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\Fortran_DLLs\River_X_DLL.dll

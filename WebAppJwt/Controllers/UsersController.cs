@@ -20,6 +20,15 @@ namespace WebAppJwt.Controllers
     [EnableCors("CorsPolicy")]
     public class UsersController : ControllerBase
     {
+        //[DllImport("River_X_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
+        //[DllImport("Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
+        //public static extern void mainFatigue(ref double me, ref double Lspan, ref double dynKL, ref double dynKV, ref double ymaxL, ref double ymaxV, ref double Teff, ref double kc, ref double Econc,
+        //     ref double Iconc, ref double KBendPipe, ref double Uc, ref double thetaSpan, ref double eonD, ref double dtrench, ref double Iturb, ref double ODtotal, ref double Dsteel, ref double tSteel,
+        //      ref double Epipe, ref double SCF, ref double C_SN, ref double m_SN, ref double zetaSoil_L, ref double zetaHydroL, ref double zetaSoil_V, ref double zetaHydroV, ref double zetaStrct, ref double rhoWater,
+        //       ref double gamaFIL, ref double gamaFCF, ref double gamaOnIL, ref double gamaOnCF, ref double gamaS, ref double gamaK, ref double freqRatio, ref double CSF, ref double LeffIL, ref double f0IL, ref double VR_IL, ref double KsdIL,
+        //       ref double VRonsetIL, ref double AYonD, ref double AmpIL, ref double S_IL, ref double Ncyc_IL, ref double FatLife_IL, ref double LeffCF, ref double f0CF, ref double VR_CF,
+        //       ref double VRonsetCF, ref double AZonD, ref double AmpCF, ref double S_CF, ref double Ncyc_CF, ref double FatLife_CF, ref int isCalcOk);
+
         private IUserService _userService;
         private readonly IConfiguration _config;
         private readonly IFlowlineDimService _flowlineDimService;
@@ -108,11 +117,26 @@ namespace WebAppJwt.Controllers
                 //ECAAnalysis.Kmat_Calc(100.501,101.501,100.501);
 
                 //IntermediateCalcs.mainIntermediateCalcs(12, 13);
-                double val1 = 4, val2 = 6, val3=8 ;
+                double val1 = 4.22, val2 = 6.65, val3=8.25 ;
                 int val4 = 4;
                 //Kmat_Calc(ref val1, ref val2, ref val3);
 
-                StaticAnalysis.analyticalStaticAnalysis(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4);
+                //StaticAnalysis.analyticalStaticAnalysis(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4);
+
+                //ECAAnalysis cs file
+
+                //FatigueAnalysis cs file
+
+                //FatigueAnalysis.mainFatigue(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3,
+                // ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val4);
+
+                //ImpactAnalysis.impactPipeOnRiverBed(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2);
+                
+                if (Environment.Is64BitProcess)
+                {
+                    ImpactAnalysis.impactPipeOnRiverBedFromF107(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val4, ref val2, ref val3, ref val1, ref val2, ref val3);
+                }
+                
                 return Ok(null);
             }
             catch (Exception ex)
@@ -121,8 +145,6 @@ namespace WebAppJwt.Controllers
             }
         }
 
-        //[DllImport("ECA_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
-        [DllImport(@"Fortran_DLL\ECA_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void Kmat_Calc(ref double CVN, ref double B, ref double Kmat);
+        
     }
 }

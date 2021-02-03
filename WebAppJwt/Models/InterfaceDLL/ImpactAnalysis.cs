@@ -13,7 +13,9 @@ namespace WebAppJwt.Models.InterfaceDLL
         public static extern void impactPipeOnRiverBed(ref double yieldStress, ref double WT, ref double Ds, ref double Uc, ref double impMassSteel, ref double PmaxSteel,
             ref double PmaxConc, ref double StrainEnergy);
 
+   
         [DllImport("Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "impactPipeOnRiverBedFromF107", CallingConvention = CallingConvention.Cdecl)]
+        [return: MarshalAs(UnmanagedType.BStr)]
         public static extern void impactPipeOnRiverBedFromF107(ref double yieldStress, ref double WT, ref double Ds, ref double Uc, ref double Y, ref double b, ref double h, ref double D, ref double x0, ref int ConcreteType, 
             ref double impMassSteel, ref double PmaxSteel, ref double impMassConc, ref double UE_Steel, ref double UE_Conc);
 

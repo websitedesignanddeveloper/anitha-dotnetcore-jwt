@@ -13,7 +13,8 @@ namespace WebAppJwt.Models.InterfaceDLL
 
         //[DllImport("River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
         //[DllImport("River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
-        [DllImport("Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
+        //[DllImport("Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport(@"D:\\VivekWalstar\\client\\Anitha\\28_JAN_2021\\github_anitha\\dotNetCore\\anitha-dotnetcore-jwt\\WebAppJwt\\Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
         public static extern void mainFatigue(ref double me, ref double Lspan, ref double dynKL, ref double dynKV, ref double ymaxL, ref double ymaxV, ref double Teff, ref double kc, ref double Econc,
              ref double Iconc, ref double KBendPipe, ref double Uc, ref double thetaSpan, ref double eonD, ref double dtrench, ref double Iturb, ref double ODtotal, ref double Dsteel, ref double tSteel,
               ref double Epipe, ref double SCF, ref double C_SN, ref double m_SN, ref double zetaSoil_L, ref double zetaHydroL, ref double zetaSoil_V, ref double zetaHydroV, ref double zetaStrct, ref double rhoWater,
