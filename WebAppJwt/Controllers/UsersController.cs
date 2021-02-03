@@ -131,12 +131,17 @@ namespace WebAppJwt.Controllers
                 // ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val4);
 
                 //ImpactAnalysis.impactPipeOnRiverBed(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2);
-                
+
+                //if (Environment.Is64BitProcess)
+                //{
+                //    ImpactAnalysis.impactPipeOnRiverBedFromF107(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val4, ref val2, ref val3, ref val1, ref val2, ref val3);
+                //}
+
                 if (Environment.Is64BitProcess)
                 {
-                    ImpactAnalysis.impactPipeOnRiverBedFromF107(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val4, ref val2, ref val3, ref val1, ref val2, ref val3);
+                    FatigueAnalysis.mainFatigue(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3,
+                     ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val4);
                 }
-                
                 return Ok(null);
             }
             catch (Exception ex)
