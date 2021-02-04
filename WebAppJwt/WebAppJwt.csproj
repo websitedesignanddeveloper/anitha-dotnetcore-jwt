@@ -2,8 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
     <Platforms>AnyCPU;x64;x86</Platforms>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -44,20 +47,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
-	<ItemGroup>
-		<Reference Include="ECA_DLL">
-			<HintPath>Fortran_DLLs\ECA_DLL.dll</HintPath>
-			<Private>true</Private>
-		</Reference>
 
-	</ItemGroup>
-	<ItemGroup>
-	  <None Update="Fortran_DLLs\ECA_DLL.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	  <None Update="Fortran_DLLs\River_X_DLL.dll">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
-	</ItemGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\..\..\raw\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

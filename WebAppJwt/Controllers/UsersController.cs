@@ -12,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using WebAppJwt.Models.InterfaceDLL;
 using System.Runtime.InteropServices;
-
+using ClassLibrary1;
 namespace WebAppJwt.Controllers
 {
     [ApiController]
@@ -20,6 +20,8 @@ namespace WebAppJwt.Controllers
     [EnableCors("CorsPolicy")]
     public class UsersController : ControllerBase
     {
+       
+
         //[DllImport("River_X_DLL.dll", EntryPoint = "Kmat_Calc", CallingConvention = CallingConvention.Cdecl)]
         //[DllImport("Fortran_DLLs\\River_X_DLL.dll", EntryPoint = "mainFatigue", CallingConvention = CallingConvention.Cdecl)]
         //public static extern void mainFatigue(ref double me, ref double Lspan, ref double dynKL, ref double dynKV, ref double ymaxL, ref double ymaxV, ref double Teff, ref double kc, ref double Econc,
@@ -109,6 +111,9 @@ namespace WebAppJwt.Controllers
         [HttpGet("getSimpleCalculation")]
         public IActionResult GetSimpleCalculation()
         {
+            Class1 c = new Class1();
+            var res = c.add(45,65);
+            
             try
             {
                 //var itemsSold = _flowlineDimService.GetAllFlowLineDim();
@@ -117,8 +122,8 @@ namespace WebAppJwt.Controllers
                 //ECAAnalysis.Kmat_Calc(100.501,101.501,100.501);
 
                 //IntermediateCalcs.mainIntermediateCalcs(12, 13);
-                double val1 = 4.22, val2 = 6.65, val3=8.25 ;
-                int val4 = 4;
+                double val1 = 44.22, val2 = 60.65, val3=85.25 ;
+                int val4 = 44;
                 //Kmat_Calc(ref val1, ref val2, ref val3);
 
                 //StaticAnalysis.analyticalStaticAnalysis(ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4, ref val3, ref val1, ref val2, ref val3, ref val1, ref val2, ref val3, ref val1, ref val4);

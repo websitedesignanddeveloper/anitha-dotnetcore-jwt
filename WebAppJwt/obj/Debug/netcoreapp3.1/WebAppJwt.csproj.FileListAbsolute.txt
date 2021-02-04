@@ -411,6 +411,7 @@ D:\VivekWalstar\client\Anitha\28_JAN_2021\dot_core\WebAppJwt\obj\Debug\netcoreap
 D:\VivekWalstar\client\Anitha\28_JAN_2021\dot_core\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.pdb
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\appsettings.json
+D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\libman.json
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\WebAppJwt.exe
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\WebAppJwt.deps.json
@@ -537,7 +538,8 @@ D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnet
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.csprojAssemblyReference.cache
+D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\staticwebassets\WebAppJwt.StaticWebAssets.Manifest.cache
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\staticwebassets\WebAppJwt.StaticWebAssets.xml
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.MvcApplicationPartsAssemblyInfo.cache
@@ -547,5 +549,3 @@ D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnet
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.csproj.CopyComplete
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.dll
 D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\obj\Debug\netcoreapp3.1\WebAppJwt.pdb
-D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\Fortran_DLLs\ECA_DLL.dll
-D:\VivekWalstar\client\Anitha\28_JAN_2021\github_anitha\dotNetCore\anitha-dotnetcore-jwt\WebAppJwt\bin\Debug\netcoreapp3.1\Fortran_DLLs\River_X_DLL.dll
